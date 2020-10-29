@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D459C6F4254AE3770090E556 /* libProximityNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D459C6ED254AE34A0090E556 /* libProximityNotification.a */; };
 		D4AB40B62544513F001B0236 /* BLE_BackgroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB40B52544513F001B0236 /* BLE_BackgroundApp.swift */; };
 		D4AB40B82544513F001B0236 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB40B72544513F001B0236 /* ContentView.swift */; };
 		D4AB40BA25445145001B0236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4AB40B925445145001B0236 /* Assets.xcassets */; };
 		D4AB40BD25445145001B0236 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4AB40BC25445145001B0236 /* Preview Assets.xcassets */; };
 		D4AB40C825445147001B0236 /* BLE_BackgroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB40C725445147001B0236 /* BLE_BackgroundTests.swift */; };
 		D4AB40D325445147001B0236 /* BLE_BackgroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB40D225445147001B0236 /* BLE_BackgroundUITests.swift */; };
+		D4AB40E425445473001B0236 /* MyAppDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB40E325445473001B0236 /* MyAppDelegator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D459C6EC254AE34A0090E556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D459C6E5254AE34A0090E556 /* ProximityNotification.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AFB3937E24630DF8003A7D58;
+			remoteInfo = ProximityNotification;
+		};
+		D459C6EE254AE34A0090E556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D459C6E5254AE34A0090E556 /* ProximityNotification.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AFC9D3BD246C413F001B7F5B;
+			remoteInfo = ProximityNotificationTests;
+		};
 		D4AB40C425445147001B0236 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D4AB40AA2544513E001B0236 /* Project object */;
@@ -33,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D459C6E5254AE34A0090E556 /* ProximityNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProximityNotification.xcodeproj; path = "../stopcovid-blesdk-ios-master/ProximityNotification.xcodeproj"; sourceTree = "<group>"; };
 		D4AB40B22544513F001B0236 /* BLE Background.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE Background.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AB40B52544513F001B0236 /* BLE_BackgroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_BackgroundApp.swift; sourceTree = "<group>"; };
 		D4AB40B72544513F001B0236 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +62,7 @@
 		D4AB40CE25445147001B0236 /* BLE BackgroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLE BackgroundUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AB40D225445147001B0236 /* BLE_BackgroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_BackgroundUITests.swift; sourceTree = "<group>"; };
 		D4AB40D425445147001B0236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4AB40E325445473001B0236 /* MyAppDelegator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppDelegator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D459C6F4254AE3770090E556 /* libProximityNotification.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +91,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D459C6E6254AE34A0090E556 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D459C6ED254AE34A0090E556 /* libProximityNotification.a */,
+				D459C6EF254AE34A0090E556 /* ProximityNotificationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D459C6F3254AE3770090E556 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4AB40A92544513E001B0236 = {
 			isa = PBXGroup;
 			children = (
+				D459C6E5254AE34A0090E556 /* ProximityNotification.xcodeproj */,
 				D4AB40B42544513F001B0236 /* BLE Background */,
 				D4AB40C625445147001B0236 /* BLE BackgroundTests */,
 				D4AB40D125445147001B0236 /* BLE BackgroundUITests */,
 				D4AB40B32544513F001B0236 /* Products */,
+				D459C6F3254AE3770090E556 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +137,7 @@
 				D4AB40B925445145001B0236 /* Assets.xcassets */,
 				D4AB40BE25445145001B0236 /* Info.plist */,
 				D4AB40BB25445145001B0236 /* Preview Content */,
+				D4AB40E325445473001B0236 /* MyAppDelegator.swift */,
 			);
 			path = "BLE Background";
 			sourceTree = "<group>";
@@ -219,6 +257,12 @@
 			mainGroup = D4AB40A92544513E001B0236;
 			productRefGroup = D4AB40B32544513F001B0236 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D459C6E6254AE34A0090E556 /* Products */;
+					ProjectRef = D459C6E5254AE34A0090E556 /* ProximityNotification.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D4AB40B12544513E001B0236 /* BLE Background */,
@@ -227,6 +271,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D459C6ED254AE34A0090E556 /* libProximityNotification.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProximityNotification.a;
+			remoteRef = D459C6EC254AE34A0090E556 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D459C6EF254AE34A0090E556 /* ProximityNotificationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ProximityNotificationTests.xctest;
+			remoteRef = D459C6EE254AE34A0090E556 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D4AB40B02544513E001B0236 /* Resources */ = {
@@ -261,6 +322,7 @@
 			files = (
 				D4AB40B82544513F001B0236 /* ContentView.swift in Sources */,
 				D4AB40B62544513F001B0236 /* BLE_BackgroundApp.swift in Sources */,
+				D4AB40E425445473001B0236 /* MyAppDelegator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +489,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "uji.BLE-Background";
+				PRODUCT_BUNDLE_IDENTIFIER = uji.iosscanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +511,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "uji.BLE-Background";
+				PRODUCT_BUNDLE_IDENTIFIER = uji.iosscanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
